@@ -25,13 +25,11 @@ export class User {
 export class AuthserviceProvider {
 
   currentUser: User;
-  private apiUrl = 'https://restcountries.eu/rest/v2/all';
   constructor(public http: HttpClient) {
     console.log('Hello AuthserviceProvider Provider');
   }
 
 
- 
   
   private extractData(res: Response|any) {
     if(res != null)
